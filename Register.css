@@ -1,0 +1,87 @@
+
+body {
+    background: url(https://wallpapercave.com/dwp2x/wp2775407.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+.alignment {
+    padding: 10px;
+    padding-left: 150px;
+    background-color: transparent;
+    width: 600px;
+    margin:auto;
+}
+.name {
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.heading {
+    width:690px;
+    background-color: black;
+    margin:auto;
+    color:rgb(83, 212, 67);
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+}
+.option {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding-inline-end: 10px;
+    padding-inline-start: 50px;
+    padding: 7px 20px;
+}        
+.textbox {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding-inline-end: 10px;
+    padding-inline-start: 50px;
+    padding: 7px 20px;
+}
+.button {
+    background-color: rgb(83, 212, 67); 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.Signup {
+    background-color: rgb(83, 212, 67); 
+    color: white; 
+}
+.Signup:hover {
+    background-color: black;
+    color: rgb(83, 212,67);
+}
+
+.link {
+    color: rgb(65, 219, 63);
+}
+a:link {
+    padding: 14px;
+    color: rgb(36, 98, 243);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  a:visited {
+    padding: 14px;
+    color: rgb(90, 244, 244);
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
