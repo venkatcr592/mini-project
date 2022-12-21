@@ -119,3 +119,28 @@ body {
   .text {
     font-size: 12px;
   }
+
+  /* LOGO */
+
+  .logo1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: left;
+    font-size: 50px;
+  }
+
+  .logo2 {
+    color: rgb(84, 214, 55);
+    text-align: center;
+    float: left;
+    font-size: 50px;
+  }
+
+  .logo3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: left;
+    padding-left: 15px;
+    font-size: 50px;
+    font-weight: bold;
+  }
