@@ -8,7 +8,7 @@ body {
 }
 /* Split and align */
 .split {
-    height: 100%;
+    height: 90%;
     width: 30%;
     position: fixed;
     z-index: 1;
@@ -35,7 +35,7 @@ body {
   .heading {
     font-family: Arial;
     color: LightGray;
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .input {
@@ -44,8 +44,9 @@ body {
     border-radius: 50px;
     padding-inline-end: 10px;
     padding-inline-start: 50px;
-    padding: 7px 20px;
-}
+    padding: 15px 60px;
+    font-size: 20px;
+ }
 
 /* Login */
 .button {
@@ -53,11 +54,11 @@ body {
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 7px 20px;
+    padding: 10px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 20px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -77,11 +78,44 @@ body {
     padding: 14px;
     color: rgb(42, 185, 237);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 20px;
   }
   a:visited {
     padding: 14px;
     color: rgb(65, 219, 63);
     text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Details */
+
+  .address-details {
+      color: rgb(179, 192, 195);
+      text-align: center;
+      float: right;
+      padding: 15px;
+  }
+
+  .phone-details {
+    color: rgb(179, 192, 195);
+    text-align: center;
+    float: right;
+    padding: 15px;
+  }
+
+  .email-details {
+    color: rgb(179, 192, 195);
+    text-align: center;
+    float: right;
+    padding: 15px;
+  }
+
+  .topic {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .text {
     font-size: 12px;
   }
