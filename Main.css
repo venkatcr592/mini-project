@@ -1,0 +1,87 @@
+/* Background */
+body {
+    background: url(https://wallpapercave.com/wp/wp10666384.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* Split and align */
+.split {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  .centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .centered img {
+    max-width: 40%;
+    height: auto;
+  }
+  .heading {
+    font-family: Arial;
+    color: LightGray;
+    font-size: 20px;
+  }
+
+  .input {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding-inline-end: 10px;
+    padding-inline-start: 50px;
+    padding: 7px 20px;
+}
+
+/* Login */
+.button {
+    background-color: rgb(83, 212, 67); 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .Login {
+    background-color: rgb(83, 212, 67); 
+    color: white; 
+   }
+  .Login:hover {
+    background-color: black;
+    color: rgb(83, 212,67);
+  }
+
+  /* Links */
+  
+  a:link {
+    padding: 14px;
+    color: rgb(42, 185, 237);
+    text-decoration: none;
+    font-size: 12px;
+  }
+  a:visited {
+    padding: 14px;
+    color: rgb(65, 219, 63);
+    text-decoration: none;
+    font-size: 12px;
+  }
