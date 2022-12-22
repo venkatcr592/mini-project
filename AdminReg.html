@@ -16,43 +16,45 @@
     </div>
 
     <div class="heading"><h1>Register</h1></div>
-    
+
+
+    <form action="index.php" method="post">
     <div class="alignment">   
         <div id="name">
             <h2 class="name">Name</h2>
-            <input class="textbox" type="text" placeholder="First name">
-            <input class="textbox" type="text" placeholder="Last name">
+            <input class="textbox" type="text" placeholder="First name" name="F_Name">
+            <input class="textbox" type="text" placeholder="Last name" name="L_Name">
         </div>
         <h2 class="name">Gender</h2>
-        <select class="option">
+        <select class="option" name="Gender">
             <option>Select</option>
             <option>Male</option>
             <option>Female</option>
             <option>Others</option>
         </select>
         <h2 class="name">User Id</h2>
-        <input class="textbox" type="text" placeholder="Create User ID">
+        <input class="textbox" type="text" placeholder="Create User ID" name="User_Id">
 
         <h2 class="name">Email</h2>
-        <input class="textbox" type="text" placeholder="Enter your email address">
+        <input class="textbox" type="text" placeholder="Enter your email address" name="Email">
 
         <h2 class="name">Phone</h2>
-        <input class="textbox" type="text" placeholder=" Enter phone number">
+        <input class="textbox" type="text" placeholder=" Enter phone number" name="Phone">
 
         <h2 class="name">Address</h2>
-        <input class="textbox" type="text" placeholder="House No.,Building Name">
-        <input class="textbox" type="text" placeholder="Road  name, Area, Colony">
+        <input class="textbox" type="text" placeholder="House No.,Building Name" name="House_No">
+        <input class="textbox" type="text" placeholder="Road  name, Area, Colony" name="Area">
         <br><br>
-        <input class="textbox" type="text" placeholder="City">
-        <input class="textbox" type="text" placeholder="Pin Code">
+        <input class="textbox" type="text" placeholder="City" name="City">
+        <input class="textbox" type="text" placeholder="Pin Code" name="Pincode">
         <h2 class="name">Password</h2>
-        <input class="textbox" type="password" placeholder="Enter a password">
+        <input class="textbox" type="password" placeholder="Enter a password" name="Password">
         <h2 class="name">Confirm password</h2>
-        <input class="textbox" type="password" placeholder="Re enter password">
+        <input class="textbox" type="password" placeholder="Re enter password" name="Cpassword">
         <br><br>
-        <button class="button Signup">Sign Up</button>
+        <input class="button Signup" type="submit">
         <p class="link">Already have account?<a href="Main.html">Login</a></p>
-        
     </div>
+    </form>
 </body>
 </html>
