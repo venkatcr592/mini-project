@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="Register.css">
-    <title>Document</title>
+    <title>Admin Register</title>
 </head>
 <body>
     <!-- LOGO -->
@@ -15,46 +15,46 @@
      <div class="logo2">RIDE</div>
     </div>
 
-    <div class="heading"><h1>Register</h1></div>
+    <div class="heading"><h1>Admin Register</h1></div>
 
 
-    <form action="index.php" method="post">
+    <form action="AdminReg.php" method="post">
     <div class="alignment">   
         <div id="name">
             <h2 class="name">Name</h2>
-            <input class="textbox" type="text" placeholder="First name" name="F_Name">
-            <input class="textbox" type="text" placeholder="Last name" name="L_Name">
+            <input class="textbox" type="text" placeholder="First name" name="f_name">
+            <input class="textbox" type="text" placeholder="Last name" name="l_name">
         </div>
         <h2 class="name">Gender</h2>
-        <select class="option" name="Gender">
+        <select class="option" name="gender">
             <option>Select</option>
             <option>Male</option>
             <option>Female</option>
             <option>Others</option>
         </select>
         <h2 class="name">User Id</h2>
-        <input class="textbox" type="text" placeholder="Create User ID" name="User_Id">
+        <input class="textbox" type="text" placeholder="Create User ID" name="user_id">
 
         <h2 class="name">Email</h2>
-        <input class="textbox" type="text" placeholder="Enter your email address" name="Email">
+        <input class="textbox" type="text" placeholder="Enter your email address" name="email">
 
         <h2 class="name">Phone</h2>
-        <input class="textbox" type="text" placeholder=" Enter phone number" name="Phone">
+        <input class="textbox" type="text" placeholder=" Enter phone number" name="phone">
 
         <h2 class="name">Address</h2>
-        <input class="textbox" type="text" placeholder="House No.,Building Name" name="House_No">
-        <input class="textbox" type="text" placeholder="Road  name, Area, Colony" name="Area">
+        <input class="textbox" type="text" placeholder="House No.,Building Name" name="house_no">
+        <input class="textbox" type="text" placeholder="Road  name, Area, Colony" name="area">
         <br><br>
-        <input class="textbox" type="text" placeholder="City" name="City">
-        <input class="textbox" type="text" placeholder="Pin Code" name="Pincode">
+        <input class="textbox" type="text" placeholder="City" name="city">
+        <input class="textbox" type="text" placeholder="Pin Code" name="pincode">
         <h2 class="name">Password</h2>
-        <input class="textbox" type="password" placeholder="Enter a password" name="Password">
-        <h2 class="name">Confirm password</h2>
-        <input class="textbox" type="password" placeholder="Re enter password" name="Cpassword">
+        <input class="textbox" type="password" placeholder="Enter a password" name="pswd">
+        <h2 class="name">Confirm password</h2>    
+        <input class="textbox" type="password" placeholder="Re enter password" name="cpassword">
         <br><br>
-        <input class="button Signup" type="submit">
+        <input class="button Signup" type="submit" value="Sign Up">
         <p class="link">Already have account?<a href="Main.html">Login</a></p>
+    </form>    
     </div>
-    </form>
 </body>
 </html>

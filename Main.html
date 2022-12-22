@@ -44,38 +44,40 @@
   </div>
   
   <!-- ADMIN LOGIN -->
-  <form action="#" method="POST">
   <div>
     <div class="split left">
         <div class="centered">
+          <form action="AdminLogin.php" method="POST">
           <img src="Assets/MainAdmin.png" alt="Admin">
           <h2 class="heading">Admin</h2>
-          <input class="input" placeholder="User_ID">
+          <input class="input" placeholder="User_ID" name="user_id">
           <br></br>
-          <input type="password" class="input" placeholder="Password">
+          <input type="password" class="input" placeholder="Password" name="adminpswd">
           <br></br>
-          <button class="button Login" type="submit">Login</button>
+          <input class="button Login" type="submit" value="Login">
           <br></br>
           <a href="AdminReg.html">New User?</a>
+        </form>
         </div>
     </div>
       
     <!-- USER LOGIN -->
     <div class="split right">
         <div class="centered">
+          <form action="UserLogin.php" method="POST">
           <img src="Assets/User.png" alt="User">
           <h2 class="heading">User</h2>
-          <input type="text" class="input" placeholder="Phone">
+          <input type="text" class="input" placeholder="Phone" name="phone">
           <br></br>
-          <input type="password" class="input" placeholder="Password">
+          <input type="password" class="input" placeholder="Password" name="userpswd">
           <br></br>
-          <button class="button Login" type="submit">Login</button>
+          <input class="button Login" type="submit" value="Login">
           <br></br>
           <div>
-          <a href="UserReg.html">New User?</a>
+          <a href="UserRe.html">New User?</a>
+        </form>
         </div>
     </div>
   </div>
-</form>
 </body>
 </html>
