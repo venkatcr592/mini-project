@@ -32,7 +32,7 @@ if($num==0)
   echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
 
 } else {
-    echo "Successfully Logged in";
+  header("Location: A_home.html");
 }
 $con->close();
 ?>
