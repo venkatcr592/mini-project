@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="navigator.css">
+    <link rel="stylesheet"href="A_addbike.css">
     <title>Add Bikes</title>
 </head>
 <body>
@@ -17,13 +18,41 @@
         </div>
         <!-- NAV BAR -->
         <ul>
-          <li><a href="A_home.html">Home</a></li>
+          <li><a href="A_home.php">Home</a></li>
           <li><a class="active" href="A_addbike.html">Add Bike</a></li>
-          <li><a href="A_viewbike.html">View Bike</a></li>
-          <li><a href="A_payment.html">Payment</a></li>
-          <li><a href="A_settings.html">Settings</a></li>
+          <li><a href="A_viewbike.php">View Bike</a></li>
+          <li><a href="A_payment.php">Payment</a></li>
+          <li><a href="A_settings.php">Settings</a></li>
+          <li><a href="Main.html">Logout</a></li>
         </ul>
       </nav>
-      <section></section>
+      <section>
+        <div><h1 style="margin:auto; color:rgb(83, 212, 67); font-size: 40px; padding: 10px 10px; text-align: center;">Register Bike</h1></div>
+              <form action="A_addbike.php" method="post">
+              <div class="alignment">   
+                  
+                  <h2 class="name">Vehicle Model : </h2><br>
+                  <input class="textbox" type="text" placeholder="Enter Model" name="bike_model">
+                  <br><br>
+                  <h2 class="name">Registration Number : </h2><br>
+                  <input class="textbox" type="text" placeholder="Enter Reg No." name="reg_no">
+                  <br><br>
+                  <h2 class="name">Purchase Year : </h2><br>
+                  <input class="textbox" type="text" placeholder="Enter year" name="year">
+                  <br><br>
+                  <h2 class="name">Kms Driven : </h2><br>
+                  <input class="textbox" type="text" placeholder=" Enter Kms Driven" name="kms_driven">
+                  <br><br>
+                  <h2 class="name">Rent : </h2><br>
+                  <input class="textbox" type="text" placeholder="Enter rent/day" name="rent">
+                  <br><br>
+                  <h2 class="name">Add Image : </h2><br>
+                  
+                  <input class="textbox" type="file" name="image" value="Add" accept=".jpg, .jpeg, .png">
+                  <br><br>
+                  <input class="button add" type="submit" name="submit">
+              </form>    
+              </div>
+      </section>
 </body>
 </html>

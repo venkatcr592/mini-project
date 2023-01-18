@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="navigator.css">
-    <title>Settings</title>
+    <title>Payment</title>
 </head>
 <body>
     <nav>
@@ -17,11 +17,12 @@
         </div>
         <!-- NAV BAR -->
         <ul>
-          <li><a href="A_home.html">Home</a></li>
+          <li><a href="A_home.php">Home</a></li>
           <li><a href="A_addbike.html">Add Bike</a></li>
-          <li><a href="A_viewbike.html">View Bike</a></li>
-          <li><a href="A_payment.html">Payment</a></li>
-          <li><a class="active" href="A_settings.html">Settings</a></li>
+          <li><a href="A_viewbike.php">View Bike</a></li>
+          <li><a class="active" href="A_payment.php">Payment</a></li>
+          <li><a href="A_settings.php">Settings</a></li>
+          <li><a href="Main.html">Logout</a></li>
         </ul>
       </nav>
       <section></section>

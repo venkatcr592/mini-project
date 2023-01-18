@@ -1,0 +1,7 @@
+if(isset($_GET['reg_no']))
+                {
+                    $reg_no = $_GET['reg_no'];
+                    $delete = "DELETE FROM vehicle WHERE `vehicle`.`reg_no` = '$reg_no'";    
+                    header("Location:A_viewbike.php");
+                }
+          session_start();

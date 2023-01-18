@@ -1,0 +1,103 @@
+.name {
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  
+  .textbox {
+    background-color: rgb(230, 224, 224);
+    border: none;
+    border-radius: 50px;
+    padding-inline-end: 10px;
+    padding-inline-start: 50px;
+    padding: 7px 20px;
+}
+
+.phonebox{
+    background-color: rgb(230, 224, 224);
+    border: none;
+    border-radius: 50px;
+    padding-inline-end: 10px;
+    padding-inline-start: 50px;
+    padding: 7px 20px;
+}
+
+.heading1 {
+margin:auto;
+color:rgb(83, 212, 67);
+font-size: 25px;
+padding-left: 22px;
+text-align:left;
+border-radius:15px 15px 0px 0px;
+}
+
+.heading {
+    width:690px;
+    margin:auto;
+    color:rgb(83, 212, 67);
+    font-size: 30px;
+    padding: 10px 10px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+    }
+
+.new_pssaword{
+color: rgb(179, 192, 195);
+text-align: center;
+float: left;
+padding: 15px;
+width:240px;
+}
+.confirm_pssaword{
+color: rgb(179, 192, 195);
+text-align: center;
+float: left;
+padding:15px;
+width:240px;
+}
+.b{
+    padding: 40px 30px;
+}
+
+.button {
+background-color: rgb(83, 212, 67); 
+border: none;
+border-radius: 10px;
+color: white;
+padding: 8px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+.submit {
+background-color: rgb(83, 212, 67); 
+color: white; 
+}
+.submit:hover {
+background-color: black;
+color: rgb(83, 212,67);
+}
+.phone_no{
+color: rgb(179, 192, 195);
+text-align: center;
+float: left;
+padding:15px;
+width:240px;
+}
+
+.New_phone_no{
+ color: rgb(179, 192, 195);
+text-align: center;
+float: left;
+padding:15px;
+width:240px;
+}
+
+.logout{
+    padding: 10px 180px;
+    text-align:left;
+}

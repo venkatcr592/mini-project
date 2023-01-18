@@ -1,21 +1,9 @@
 <?php
 
-$server = "localhost:3307";
-$username = "root";
-$password = "";
-$databasename = "brms";
-
-// Create connection
-$con = mysqli_connect($server, $username, $password, $databasename);
-
-// Check connection
-if (!$con) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-//echo "Connected successfully";
+include_once('connect.php');
 
 $f_name = $_POST['f_name'];
-$l_name = $_POST['l_name'];
+$l_name = $_POST['l_name']; 
 $user_id = $_POST['user_id'];
 $gender = $_POST['gender'];
 $email = $_POST['email'];

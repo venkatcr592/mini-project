@@ -1,18 +1,6 @@
 <?php
 
-$server = "localhost:3307";
-$username = "root";
-$password = "";
-$databasename = "brms";
-
-// Create connection
-$con = mysqli_connect($server, $username, $password, $databasename);
-
-// Check connection
-if (!$con) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-//echo "Connected successfully";
+include_once('connect.php');
 
 $phone = $_POST['phone'];
 $userpswd = $_POST['userpswd'];
@@ -32,7 +20,10 @@ if($num==0)
   echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
 
 } else {
-    echo "Successfully Logged in";
+  session_start();
+  $_SESSION['phone'] = $phone;
+  $_SESSION['userpswd'] = $userpswd;
+  header("Location: U_home.php");
 }
 $con->close();
 ?>

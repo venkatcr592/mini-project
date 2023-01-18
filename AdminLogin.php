@@ -1,23 +1,10 @@
 <?php
-
-$server = "localhost:3307";
-$username = "root";
-$password = "";
-$databasename = "brms";
-
-// Create connection
-$con = mysqli_connect($server, $username, $password, $databasename);
-
-// Check connection
-if (!$con) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-//echo "Connected successfully";
+include_once('connect.php');
 
 $user_id = $_POST['user_id'];
 $adminpswd = $_POST['adminpswd'];
 
-$sql = "select user_id,pswd from `admin` where user_id='$user_id' and pswd='$adminpswd'";
+$sql = "SELECT user_id,pswd FROM `admin` WHERE user_id='$user_id' AND pswd='$adminpswd'";
 $result = $con->query($sql);
 $num = mysqli_num_rows($result);
 if($num==0)
@@ -32,7 +19,11 @@ if($num==0)
   echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
 
 } else {
-  header("Location: A_home.html");
+  session_start();
+  $_SESSION['user_id'] = $user_id;
+  $_SESSION['pswd'] = $adminpswd;
+  header("Location: A_home.php");
 }
+
 $con->close();
 ?>

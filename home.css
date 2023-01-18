@@ -1,0 +1,28 @@
+.name {
+    font-family: Arial;
+    margin:auto;
+    color:rgb(223, 223, 223);
+    font-size: 15px;
+    padding: 10px 10px;
+}
+.heading {
+    margin:auto;
+    color:rgb(83, 212, 67);
+    font-size: 25px;
+    padding: 10px 10px;
+    text-align: center;
+}
+.subheading {
+    margin:auto;
+    color:rgb(232, 232, 232);
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+}
+.alignment {
+    padding: 10px;
+    padding-left: 150px;
+    background-color: transparent;
+    width: 600px;
+    margin:auto;
+}
