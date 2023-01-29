@@ -33,7 +33,7 @@
   session_start();
   $license_no = $_SESSION['license_no'];
 
-  $sql = "SELECT `vehicle`.`image`,`vehicle`.`bike_model`,`reservations`.`reg_no`,`reservations`.`res_id`,`reservations`.`start_date`,`reservations`.`end_date`,`reservations`.`payment`,`admin`.`phone`,`admin`.`email` FROM `vehicle`,`admin`,`reservations` WHERE `reservations`.`reg_no`=`vehicle`.`reg_no` AND `vehicle`.`user_id`=`admin`.`user_id` AND `reservations`.`license_no`='$license_no' GROUP BY `reg_no` ORDER BY `end_date` DESC;";
+  $sql = "SELECT `vehicle`.`image`,`vehicle`.`bike_model`,`reservations`.`reg_no`,`reservations`.`res_id`,`reservations`.`start_date`,`reservations`.`end_date`,`reservations`.`payment`,`admin`.`phone`,`admin`.`email` FROM `vehicle`,`admin`,`reservations` WHERE `reservations`.`reg_no`=`vehicle`.`reg_no` AND `vehicle`.`user_id`=`admin`.`user_id` AND `reservations`.`license_no`='$license_no' GROUP BY `res_id` ORDER BY `end_date` DESC;";
 
   $result = $con->query($sql);
   $num = mysqli_num_rows($result);

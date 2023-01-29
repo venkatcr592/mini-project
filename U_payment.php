@@ -33,7 +33,7 @@
     session_start();
     $license_no = $_SESSION['license_no'];
 
-    $sql = "SELECT `vehicle`.`bike_model`,`vehicle`.`reg_no`,`payment`.`tot_amt`,`payment`.`pay_date`,`payment`.`transaction_id`,`payment`.`pay_method`,`reservations`.`payment` FROM `vehicle`,`payment`,`reservations` WHERE `vehicle`.`reg_no`=`payment`.`reg_no` AND`reservations`.`license_no`=`payment`.`license_no` AND `reservations`.`license_no`='$license_no' GROUP BY `reg_no` ORDER BY `pay_date` DESC;";
+    $sql = "SELECT `vehicle`.`bike_model`,`vehicle`.`reg_no`,`payment`.`tot_amt`,`payment`.`pay_date`,`payment`.`transaction_id`,`payment`.`pay_method`,`reservations`.`payment` FROM `vehicle`,`payment`,`reservations` WHERE `vehicle`.`reg_no`=`payment`.`reg_no` AND`reservations`.`license_no`=`payment`.`license_no` AND `reservations`.`license_no`='$license_no' GROUP BY `transaction_id` ORDER BY `pay_date` DESC;";
     $result = $con->query($sql);
   ?>
   <section>

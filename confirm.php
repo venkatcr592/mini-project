@@ -1,7 +1,7 @@
 <?php
 include_once('connect.php');
 $res_id = $_POST['res_id'];
-$sql = "UPDATE `reservations` SET `payment` = 'Done' WHERE `reservations`.`res_id` = '$res_id';";
+$sql = "UPDATE `reservations` SET `reservations`.`payment` = 'Done' WHERE `reservations`.`res_id` = '$res_id';";
 $con->query($sql);
 
 $sql2 = "SELECT `payment`.`tot_amt`,`payment`.`user_id`,`admin`.`salary` FROM `admin`,`reservations`,`payment` WHERE `payment`.`reg_no`=`reservations`.`reg_no` AND `payment`.`user_id`=`admin`.`user_id` AND`reservations`.`res_id`='$res_id';";

@@ -33,7 +33,7 @@
     session_start();
     $user_id = $_SESSION['user_id'];
 
-    $sql = "SELECT `payment`.`reg_no`,`payment`.`bholder_name`,`payment`.`tot_amt`,`payment`.`pay_date`,`payment`.`transaction_id`,`payment`.`pay_method`,`reservations`.`payment` FROM `admin`,`payment`,`reservations` WHERE `reservations`.`reg_no`=`payment`.`reg_no` AND `admin`.`user_id`=`payment`.`user_id` AND `payment`.`user_id`='$user_id' GROUP BY `reg_no` ORDER BY `pay_date` DESC;";
+    $sql = "SELECT `payment`.`reg_no`,`payment`.`bholder_name`,`payment`.`tot_amt`,`payment`.`pay_date`,`payment`.`transaction_id`,`payment`.`pay_method`,`reservations`.`payment` FROM `admin`,`payment`,`reservations` WHERE `reservations`.`res_id`=`payment`.`res_id` AND `admin`.`user_id`=`payment`.`user_id` AND `payment`.`user_id`='$user_id' GROUP BY `transaction_id` ORDER BY `pay_date` DESC;";
     $result = $con->query($sql);
   ?>
   <section>

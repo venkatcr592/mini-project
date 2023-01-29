@@ -33,13 +33,13 @@
   include_once('connect.php');
   $start_date = $_POST['start_date'];
   $end_date = $_POST['end_date'];
-  $days = $_POST['days'];
+
 
   session_start();
   $phone = $_SESSION['phone'];
   $_SESSION['start_date'] = $start_date;
   $_SESSION['end_date'] = $end_date;
-  $_SESSION['days'] = $days;
+
 
   $sql = "SELECT * FROM `vehicle` WHERE `vehicle`.`reg_no` NOT IN (SELECT `reservations`.`reg_no` FROM `reservations` WHERE `reservations`.`end_date` BETWEEN '$start_date' AND '$end_date');";
   $result = $con->query($sql);
