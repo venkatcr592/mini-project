@@ -1,0 +1,31 @@
+.card {
+    width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 400px;
+    border: 3px solid rgb(152, 252, 65);
+    border-radius: 15px;
+    margin: 40px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+  
+  .card .caption {
+    padding-left: 20px;
+  }
+  
+  .card .name {
+    text-align: left;
+    font-family: Arial;
+    color: rgb(0, 255, 26);
+    font-size: 15px;
+  }
+  
+  .card .name1 {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(233, 233, 233);
+    font-size: 17px;
+  }
+  
+  

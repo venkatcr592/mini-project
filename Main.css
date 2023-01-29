@@ -1,146 +1,155 @@
 /* Background */
 body {
-    background: url(https://wallpapercave.com/wp/wp10666384.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: center;
+  background: url(https://wallpapercave.com/wp/wp10666384.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
 }
+
 /* Split and align */
 .split {
-    height: 100%;
-    width: 30%;
-    position: fixed; 
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-  }
-  .left {
-    left: 0;
-  }
-  .right {
-    right: 0;
-  }
-  .centered {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .centered img {
-    max-width: 30%;
-    height: auto;
-  }
-  .heading {
-    font-family: Arial;
-    color: LightGray;
-    font-size: 30px;
-  }
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
 
-  .input {
-    background-color: white;
-    border: none;
-    border-radius: 50px;
-    padding-inline-end: 10px;
-    padding-inline-start: 50px;
-    padding: 10px 30px;
-    font-size: 20px;
- }
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  max-width: 30%;
+  height: auto;
+}
+
+.heading {
+  font-family: Arial;
+  color: LightGray;
+  font-size: 30px;
+}
+
+.input {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  padding-inline-end: 10px;
+  padding-inline-start: 50px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
 
 /* Login */
 .button {
-    background-color: rgb(83, 212, 67); 
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  .Login {
-    background-color: rgb(83, 212, 67); 
-    color: white; 
-   }
-  .Login:hover {
-    background-color: black;
-    color: rgb(83, 212,67);
-  }
+  background-color: rgb(83, 212, 67);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-  /* Links */
-  
-  a:link {
-    padding: 14px;
-    color: rgb(42, 185, 237);
-    text-decoration: none;
-    font-size: 15px;
-  }
-  a:visited {
-    padding: 14px;
-    color: rgb(65, 219, 63);
-    text-decoration: none;
-    font-size: 15px;
-  }
+.Login {
+  background-color: rgb(83, 212, 67);
+  color: white;
+}
 
-  /* Details */
+.Login:hover {
+  background-color: black;
+  color: rgb(83, 212, 67);
+}
 
-  .address-details {
-      color: rgb(179, 192, 195);
-      text-align: center;
-      float: right;
-      padding: 15px;
-  }
+/* Links */
 
-  .phone-details {
-    color: rgb(179, 192, 195);
-    text-align: center;
-    float: right;
-    padding: 15px;
-  }
+a:link {
+  padding: 14px;
+  color: rgb(42, 185, 237);
+  text-decoration: none;
+  font-size: 15px;
+}
 
-  .email-details {
-    color: rgb(179, 192, 195);
-    text-align: center;
-    float: right;
-    padding: 15px;
-  }
+a:visited {
+  padding: 14px;
+  color: rgb(65, 219, 63);
+  text-decoration: none;
+  font-size: 15px;
+}
 
-  .topic {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: bold;
-  }
+/* Details */
 
-  .text {
-    font-size: 12px;
-  }
+.address-details {
+  color: rgb(179, 192, 195);
+  text-align: center;
+  float: right;
+  padding: 15px;
+}
 
-  /* LOGO */
+.phone-details {
+  color: rgb(179, 192, 195);
+  text-align: center;
+  float: right;
+  padding: 15px;
+}
 
-  .logo1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    float: left;
-    font-size: 50px;
-  }
+.email-details {
+  color: rgb(179, 192, 195);
+  text-align: center;
+  float: right;
+  padding: 15px;
+}
 
-  .logo2 {
-    color: rgb(84, 214, 55);
-    text-align: center;
-    float: left;
-    font-size: 50px;
-  }
+.topic {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: bold;
+}
 
-  .logo3 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    float: left;
-    padding-left: 15px;
-    font-size: 50px;
-    font-weight: bold;
-  }
+.text {
+  font-size: 12px;
+}
+
+/* LOGO */
+
+.logo1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  float: left;
+  font-size: 50px;
+}
+
+.logo2 {
+  color: rgb(84, 214, 55);
+  text-align: center;
+  float: left;
+  font-size: 50px;
+}
+
+.logo3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  float: left;
+  padding-left: 15px;
+  font-size: 50px;
+  font-weight: bold;
+}

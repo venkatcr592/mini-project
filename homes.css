@@ -1,0 +1,39 @@
+.heading {
+    margin: auto;
+    color: rgb(83, 212, 67);
+    font-size: 25px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.subheading {
+    margin: auto;
+    color: rgb(99, 234, 69);
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.alignment {
+    padding: 10px;
+    padding-left: 150px;
+    background-color: transparent;
+    width: 600px;
+    margin: auto;
+}
+
+.name {
+    font-family: Arial;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.name1 {
+    font-family: Arial;
+    margin: auto;
+    color: rgb(144, 249, 95);
+    font-size: 20px;
+    padding: 10px 10px;
+}

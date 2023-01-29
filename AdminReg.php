@@ -3,7 +3,7 @@
 include_once('connect.php');
 
 $f_name = $_POST['f_name'];
-$l_name = $_POST['l_name']; 
+$l_name = $_POST['l_name'];
 $user_id = $_POST['user_id'];
 $gender = $_POST['gender'];
 $email = $_POST['email'];
@@ -15,10 +15,11 @@ $pincode = $_POST['pincode'];
 $pswd = $_POST['pswd'];
 $cpassword = $_POST['cpassword'];
 
-if(empty($f_name) || empty($l_name) || empty($user_id) || empty($gender) || empty($email) 
-  || empty($phone) || empty($house_no) || empty($area) || empty($city) || empty($pincode) || 
-  empty($pswd) || empty($cpassword))
-{
+if (
+  empty($f_name) || empty($l_name) || empty($user_id) || empty($gender) || empty($email)
+  || empty($phone) || empty($house_no) || empty($area) || empty($city) || empty($pincode) ||
+  empty($pswd) || empty($cpassword)
+) {
   echo "<p style='padding-top: 150px;
   color:rgb(83, 212, 67);
   font-size: 50px;
@@ -47,8 +48,9 @@ if(empty($f_name) || empty($l_name) || empty($user_id) || empty($gender) || empt
 
     if ($cpassword == $pswd) {
       if ($con->query($sql) == true) {
-        echo "Registered";
+        header("Location: Main.html");
       }
+
     } else {
       echo "<p style='padding-top: 150px;
       color:rgb(83, 212, 67);
@@ -61,5 +63,5 @@ if(empty($f_name) || empty($l_name) || empty($user_id) || empty($gender) || empt
     }
   }
   $con->close();
-}  
+}
 ?>

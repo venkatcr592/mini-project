@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="navigator.css">
-  <link rel="stylesheet" href="AB_cards.css">
-  <title>Bikes</title>
+  <link rel="stylesheet" href="U_cards.css">
+  <title>Book Bikes</title>
 </head>
 
 <body>
@@ -20,32 +20,42 @@
     </div>
     <!-- NAV BAR -->
     <ul>
-      <li><a href="A_home.php">Home</a></li>
-      <li><a href="A_addbike.html">Add Bike</a></li>
-      <li><a class="active" href="A_viewbike.php">View Bike</a></li>
-      <li><a href="A_payment.php">Payment</a></li>
-      <li><a href="A_settings.php">Settings</a></li>
+      <li><a href="U_home.php">Home</a></li>
+      <li><a class="active" href="U_bikes.php">Book Bikes</a></li>
+      <li><a href="U_bookings.php">Booking History</a></li>
+      <li><a href="U_payment.php">Payments</a></li>
+      <li><a href="U_settings.php">Settings</a></li>
       <li><a href="Main.html">Logout</a></li>
     </ul>
   </nav>
-
   <!-- SQL CON -->
   <?php
   include_once('connect.php');
+  $start_date = $_POST['start_date'];
+  $end_date = $_POST['end_date'];
+  $days = $_POST['days'];
+
   session_start();
-  $user_id = $_SESSION['user_id'];
-  $pswd = $_SESSION['pswd'];
+  $phone = $_SESSION['phone'];
+  $_SESSION['start_date'] = $start_date;
+  $_SESSION['end_date'] = $end_date;
+  $_SESSION['days'] = $days;
 
-  $sql = "SELECT * FROM `vehicle` WHERE user_id='$user_id' ";
-
+  $sql = "SELECT * FROM `vehicle` WHERE `vehicle`.`reg_no` NOT IN (SELECT `reservations`.`reg_no` FROM `reservations` WHERE `reservations`.`end_date` BETWEEN '$start_date' AND '$end_date');";
   $result = $con->query($sql);
-
   ?>
   <section>
     <div>
-      <h1 style="margin:auto; color:rgb(83, 212, 67); font-size: 40px; padding: 10px 10px; text-align: center;">My Bikes
-      </h1>
+      <h1 style="margin:auto; color:rgb(83, 212, 67); font-size: 40px; padding: 10px 10px; text-align: center;">Book
+        Bikes</h1>
     </div>
+    <form action="payment_1.php" method="post">
+      <div class="alignment">
+        <h1 class="date">Enter Reg No to continue booking : <input class="textbx" type="textbox"
+            placeholder="Enter Reg.no" name="reg_no"></h1>
+        <input class="button del" type="submit" value="Book">
+      </div>
+    </form>
     <?php
     while ($row = mysqli_fetch_assoc($result)) {
       ?>
@@ -74,21 +84,14 @@
             </p>
             <p class="name">Price : </p>
             <p class="name1">Rs.
-              <?php echo $row["rent"]; ?>
+              <?php echo $row["rent"]; ?> /day
             </p>
+            <br>
           </div>
-          <br>
-          <form action="delete.php" method="post">
-            <input class="textbx" type="password" placeholder="Confirm Reg no. and delete" name="reg_no">
-            <input class="button del" type="submit" value="Delete">
-          </form>
-          <br>
         </div>
       </main>
-
       <?php
     }
-    $con->close();
     ?>
   </section>
 </body>

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="navigator.css">
-  <link rel="stylesheet" href="book.css">
-  <title>Book Bikes</title>
+  <link rel="stylesheet" href="U_cards.css">
+  <title>Bikes</title>
 </head>
 
 <body>
@@ -28,20 +28,16 @@
       <li><a href="Main.html">Logout</a></li>
     </ul>
   </nav>
-
+  <!-- SQL CON -->
+  <?php
+  include_once('connect.php');
+  $start_date = $_POST['start_date'];
+  $end_date = $_POST['end_date'];
+  $reg_no = $_POST['reg_no'];
+  echo $end_date;
+  ?>
   <section>
-    <div>
-      <h1 style="margin:auto; color:rgb(83, 212, 67); font-size: 40px; padding: 10px 10px; text-align: center;">Book
-        Bikes</h1>
-    </div>
-    <br>
-    <form action="U_bikes1.php" method="post">
-      <div class="alignment">
-        <h1 class="date">Enter Start date : <input class="textbx" type="datetime-local" name="start_date"></h1><br>
-        <h1 class="date">Enter End date : <input class="textbx" type="datetime-local" name="end_date"></h1><br>
-        <input class="button del" type="submit" value="Continue">
-      </div>
-    </form>
+
   </section>
 </body>
 

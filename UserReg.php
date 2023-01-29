@@ -15,10 +15,11 @@ $pincode = $_POST['pincode'];
 $pswd = $_POST['pswd'];
 $cpassword = $_POST['cpassword'];
 
-if(empty($f_name) || empty($l_name) || empty($license_no) || empty($gender) || empty($email) 
-  || empty($phone) || empty($house_no) || empty($area) || empty($city) || empty($pincode) || 
-  empty($pswd) || empty($cpassword))
-{
+if (
+  empty($f_name) || empty($l_name) || empty($license_no) || empty($gender) || empty($email)
+  || empty($phone) || empty($house_no) || empty($area) || empty($city) || empty($pincode) ||
+  empty($pswd) || empty($cpassword)
+) {
   echo "<p style='padding-top: 150px;
   color:rgb(83, 212, 67);
   font-size: 50px;
@@ -28,38 +29,38 @@ if(empty($f_name) || empty($l_name) || empty($license_no) || empty($gender) || e
   echo "  ";
   echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
 } else {
-        $sql = "select * from `user` where phone='$phone' ";
-        $result = $con->query($sql);
-        $num = mysqli_num_rows($result);
-        if ($num > 0) {
-          echo "<p style='padding-top: 150px;
+  $sql = "select * from `user` where phone='$phone' ";
+  $result = $con->query($sql);
+  $num = mysqli_num_rows($result);
+  if ($num > 0) {
+    echo "<p style='padding-top: 150px;
             color:rgb(83, 212, 67);
             font-size: 50px;
             text-align:left;'>Phone Number already Exist !</p>";
 
-          echo "<a href='UserRe.html'><input type='button' value='Back to Register'></a>";
-          echo "  ";
-          echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
+    echo "<a href='UserRe.html'><input type='button' value='Back to Register'></a>";
+    echo "  ";
+    echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
 
-        } else {
-          $sql = "INSERT INTO `user`(f_name, l_name, gender, license_no , phone, email, house_no, area, city, pincode, pswd) VALUES
+  } else {
+    $sql = "INSERT INTO `user`(f_name, l_name, gender, license_no , phone, email, house_no, area, city, pincode, pswd) VALUES
             ('$f_name','$l_name','$gender','$license_no','$phone','$email','$house_no','$area','$city','$pincode','$pswd');";
 
-          if ($cpassword == $pswd) {
-            if ($con->query($sql) == true) {
-              echo "Registered";
-            }
-          } else {
-            echo "<p style='padding-top: 150px;
+    if ($cpassword == $pswd) {
+      if ($con->query($sql) == true) {
+        header("Location: Main.html");
+      }
+    } else {
+      echo "<p style='padding-top: 150px;
             color:rgb(83, 212, 67);
             font-size: 50px;
             text-align:left;'>Password and confirm password must match !</p>";
 
-            echo "<a href='UserRe.html'><input type='button' value='Back to Register'></a>";
-            echo "  ";
-            echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
-          }
-        }
-        $con->close();
-}    
+      echo "<a href='UserRe.html'><input type='button' value='Back to Register'></a>";
+      echo "  ";
+      echo "<a href='Main.html'><input type='button' value='Back to Home Page' class='button'></a>";
+    }
+  }
+  $con->close();
+}
 ?>

@@ -1,4 +1,3 @@
-
 body {
     background: url(https://wallpapercave.com/dwp2x/wp2775407.jpg);
     background-repeat: no-repeat;
@@ -6,28 +5,32 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
 .alignment {
     padding: 10px;
     padding-left: 150px;
     background-color: transparent;
     width: 600px;
-    margin:auto;
+    margin: auto;
 }
+
 .name {
     font-family: Arial;
     color: rgb(255, 255, 255);
     font-size: 15px;
 }
+
 .heading {
-    width:690px;
+    width: 690px;
     background-color: rgba(0, 0, 0, 0.634);
-    margin:auto;
-    color:rgb(83, 212, 67);
+    margin: auto;
+    color: rgb(83, 212, 67);
     font-size: 20px;
     padding: 10px 10px;
-    text-align:center;
-    border-radius:15px 15px 0px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
 }
+
 .option {
     background-color: white;
     border: none;
@@ -35,7 +38,8 @@ body {
     padding-inline-end: 10px;
     padding-inline-start: 50px;
     padding: 7px 20px;
-}        
+}
+
 .textbox {
     background-color: white;
     border: none;
@@ -44,8 +48,9 @@ body {
     padding-inline-start: 50px;
     padding: 7px 20px;
 }
+
 .button {
-    background-color: rgb(83, 212, 67); 
+    background-color: rgb(83, 212, 67);
     border: none;
     border-radius: 10px;
     color: white;
@@ -60,51 +65,54 @@ body {
 }
 
 .Signup {
-    background-color: rgb(83, 212, 67); 
-    color: white; 
+    background-color: rgb(83, 212, 67);
+    color: white;
 }
+
 .Signup:hover {
     background-color: black;
-    color: rgb(83, 212,67);
+    color: rgb(83, 212, 67);
 }
 
 .link {
     color: rgb(65, 219, 63);
 }
+
 a:link {
     padding: 14px;
     color: rgb(36, 98, 243);
     text-decoration: none;
     font-size: 15px;
-  }
-  a:visited {
+}
+
+a:visited {
     padding: 14px;
     color: rgb(90, 244, 244);
     text-decoration: none;
     font-size: 15px;
-  }
+}
 
-   /* LOGO */
+/* LOGO */
 
-   .logo1 {
+.logo1 {
     color: rgb(255, 255, 255);
     text-align: center;
     float: left;
     font-size: 40px;
-  }
+}
 
-  .logo2 {
+.logo2 {
     color: rgb(84, 214, 55);
     text-align: center;
     float: left;
     font-size: 40px;
-  }
+}
 
-  .logo3 {
+.logo3 {
     color: rgb(255, 255, 255);
     text-align: center;
     float: left;
     padding-left: 15px;
     font-size: 40px;
     font-weight: bold;
-  }
+}

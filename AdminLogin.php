@@ -7,8 +7,7 @@ $adminpswd = $_POST['adminpswd'];
 $sql = "SELECT user_id,pswd FROM `admin` WHERE user_id='$user_id' AND pswd='$adminpswd'";
 $result = $con->query($sql);
 $num = mysqli_num_rows($result);
-if($num==0)
-{
+if ($num == 0) {
   echo "<p style='padding-top: 150px;
   color:rgb(83, 212, 67);
   font-size: 50px;

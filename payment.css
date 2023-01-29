@@ -1,11 +1,3 @@
-.alignment {
-    padding: 10px;
-    padding-left: 150px;
-    background-color: transparent;
-    width: 600px;
-    margin: auto;
-}
-
 .name {
     font-family: Arial;
     color: rgb(255, 255, 255);
@@ -13,6 +5,15 @@
 }
 
 .textbox {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding-inline-end: 10px;
+    padding-inline-start: 50px;
+    padding: 7px 20px;
+}
+
+.option {
     background-color: white;
     border: none;
     border-radius: 50px;
@@ -36,12 +37,20 @@
     cursor: pointer;
 }
 
-.add {
+.Signup {
     background-color: rgb(83, 212, 67);
     color: white;
 }
 
-.add:hover {
+.Signup:hover {
     background-color: black;
     color: rgb(83, 212, 67);
+}
+
+.alignment {
+    padding: 10px;
+    padding-left: 150px;
+    background-color: transparent;
+    width: 600px;
+    margin: auto;
 }
