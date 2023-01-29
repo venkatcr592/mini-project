@@ -35,7 +35,7 @@
 
     $sql = "SELECT `reservations`.`payment` FROM `reservations`,`payment` WHERE `reservations`.`reg_no`=`payment`.`reg_no` AND `payment`.`user_id`='$user_id' AND `reservations`.`payment`='Pending';";
     $result = $con->query($sql);
-    $sql1 = "SELECT * FROM `reservations`,`payment` WHERE `reservations`.`reg_no`=`payment`.`reg_no` AND `payment`.`user_id`='$user_id';";
+    $sql1 = "SELECT * FROM `reservations`,`payment` WHERE `reservations`.`reg_no`=`payment`.`reg_no` AND `payment`.`user_id`='$user_id' AND `reservations`.`payment`='Pending';";
     $result1 = $con->query($sql1);
 
     $num = mysqli_num_rows($result);

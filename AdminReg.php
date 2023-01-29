@@ -44,7 +44,7 @@ if (
 
   } else {
     $sql = "INSERT INTO `admin`(f_name, l_name, user_id, phone, gender, email, house_no, area, city, pincode, pswd, salary) VALUES
-      ('$f_name','$l_name','$user_id','$phone','$gender','$email','$house_no','$area','$city','$pincode','$pswd',null);";
+      ('$f_name','$l_name','$user_id','$phone','$gender','$email','$house_no','$area','$city','$pincode','$pswd','0');";
 
     if ($cpassword == $pswd) {
       if ($con->query($sql) == true) {
