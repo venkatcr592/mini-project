@@ -35,16 +35,13 @@
   session_start();
   $user_id = $_SESSION['user_id'];
   $pswd = $_SESSION['pswd'];
-
   $sql = "SELECT * FROM `admin` WHERE user_id='$user_id' ";
   $result = $con->query($sql);
   ?>
-
   <section>
     <?php
     while ($row = mysqli_fetch_assoc($result)) {
       ?>
-
       <div class="heading">
         <h1>Welcome
           <?php echo $row["f_name"]; ?> ,
@@ -84,12 +81,10 @@
           <?php echo $row["pincode"]; ?>
         </h2>
       </div>
-
       <?php
     }
     $con->close();
     ?>
   </section>
 </body>
-
 </html>

@@ -80,7 +80,7 @@
       <div class="New_phone_no">
         <h2 class="name">New Phone No.</h2>
         <br>
-        <input class="textbox" type="text" placeholder="New_phone_no" name="nphone">
+        <input class="textbox" type="text" placeholder="New_phone_no" pattern="[0-9] {10}" name="nphone">
       </div>
 
       <div class="b">

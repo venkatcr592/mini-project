@@ -37,8 +37,8 @@
     <br>
     <form action="U_bikes1.php" method="post">
       <div class="alignment">
-        <h1 class="date">Enter Start date : <input class="textbx" type="datetime-local" name="start_date"></h1><br>
-        <h1 class="date">Enter End date : <input class="textbx" type="datetime-local" name="end_date"></h1><br>
+        <h1 class="date">Enter Start date : <input class="textbx" type="datetime-local" min="2023-02-09 10:43:00" max="2024-02-09 10:43:00" name="start_date"></h1><br>
+        <h1 class="date">Enter End date : <input class="textbx" type="datetime-local" min="2023-02-09 10:43:00" max="2024-02-09 10:43:00" name="end_date"></h1><br>
         <input class="button del" type="submit" value="Continue">
       </div>
     </form>
